@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../bk.jpg</file>
+        <file>plane_line.txt</file>
+        <file>train_city.txt</file>
+        <file>train_line.txt</file>
+        <file>plane_city.txt</file>
+    </qresource>
+</RCC>

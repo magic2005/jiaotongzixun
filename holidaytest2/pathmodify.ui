@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PathModify</class>
+ <widget class="QWidget" name="PathModify">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#pathmodify{border-image:url(:/C:/Users/magic/Pictures/Saved Pictures/Business Candle Stick Graph Chart Stock Stock Vector (Royalty Free) 2169971673 _ Shutterstock_files/business-candle-stick-graph-chart-260nw-2169971673.jpg)}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>90</y>
+     <width>874</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <spacer name="horizontalSpacer_19">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="Path_Trans_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>交通工具</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_20">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdy_Trans_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_21">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <spacer name="horizontalSpacer_22">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="order_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>班次号</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_23">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="PathMdy_order_lineEdit"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_24">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <spacer name="horizontalSpacer_25">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="PathSrc_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>起始站</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_26">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="PathMdySrc_lineEdit"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_27">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <spacer name="horizontalSpacer_28">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="PathDes_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>终点站</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_29">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="PathMdyDes_lineEdit"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_30">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <spacer name="horizontalSpacer_31">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="PathSt_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>起始时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyST_month_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>月</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyST_day_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>日</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyST_hour_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>时</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyST_min_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>分</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_32">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <spacer name="horizontalSpacer_33">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="PathEt_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>终点时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyET_month_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>月</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyET_day_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>日</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyET_hour_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>时</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="PathMdyET_min_comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>分</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_37">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <spacer name="horizontalSpacer_34">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>125</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="PayMoney_label_2">
+          <property name="styleSheet">
+           <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>旅费</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_35">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="MdyPayMoney_lineEdit"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_36">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_16">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>180</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PathMdy_Confirm_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	color:#52DCFE;
+	border:2px solid #52DCFE;
+	border-radius:5px;
+font: 11pt &quot;微软雅黑&quot;;
+}
+
+QPushButton::hover{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::pressed,QPushButton::checked{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::disabled{
+	background-color:transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>200</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PathMdy_Exit_pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>20</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	color:#52DCFE;
+	border:2px solid #52DCFE;
+	border-radius:5px;
+font: 11pt &quot;微软雅黑&quot;;
+}
+
+QPushButton::hover{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::pressed,QPushButton::checked{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::disabled{
+	background-color:transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>250</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame
+{border-image:url(:/bk.jpg)}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

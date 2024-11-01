@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1052</width>
+    <height>669</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+border-image: url(:/bk.jpg);}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>1000</width>
+      <height>560</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>200</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>560</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>560</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{	
+	color:#52DCFE;
+	border:2px solid #52DCFE;
+	border-radius:5px;
+}
+
+QPushButton::hover{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::pressed,QPushButton::checked{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::disabled{
+	background-color:transparent;
+}
+#mainwindow{border-image:url(:/bk.jpg)}</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="main_page">
+     <property name="minimumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>437</width>
+        <height>347</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="Title_label">
+         <property name="minimumSize">
+          <size>
+           <width>435</width>
+           <height>141</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>888</width>
+           <height>141</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>25</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+font: 25pt &quot;黑体&quot;;
+color:rgb(88, 172, 255);</string>
+         </property>
+         <property name="text">
+          <string notr="true">交通咨询系统</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PathChoose_pushButton">
+         <property name="styleSheet">
+          <string notr="true">/*按钮普通态*/
+QPushButton
+{
+    /*字体为微软雅黑*/
+    font-family:Microsoft Yahei;
+    /*字体大小为20点*/
+    font-size:20pt;
+    /*字体颜色为白色*/    
+    color:white;
+    /*背景颜色*/  
+     background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(9, 251, 255),
+                                 stop:0.5    rgb(154, 197, 252),
+                                 stop:1   rgb(211, 195, 252));
+/*background: qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0 #497BF0,stop:1 #1FB6F6);*/
+    /*边框圆角半径为8像素*/ 
+    border-radius:8px;
+}
+
+/*按钮停留态*/
+QPushButton:hover
+{
+background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(159, 224, 255),
+                                 stop:0.5    rgb(136, 168, 250),
+                                 stop:1   rgb(15, 93, 192));
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{
+    background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(107, 232, 207),
+                                 stop:0.5     rgb(159, 224, 255),
+                                 stop:1   rgb(211, 195, 252));
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>路径查询</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PathCheck_pushButton">
+         <property name="styleSheet">
+          <string notr="true">/*按钮普通态*/
+QPushButton
+{
+    /*字体为微软雅黑*/
+    font-family:Microsoft Yahei;
+    /*字体大小为20点*/
+    font-size:20pt;
+    /*字体颜色为白色*/    
+    color:white;
+    /*背景颜色*/  
+     background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(9, 251, 255),
+                                 stop:0.5    rgb(154, 197, 252),
+                                 stop:1   rgb(211, 195, 252));
+/*background: qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0 #497BF0,stop:1 #1FB6F6);*/
+    /*边框圆角半径为8像素*/ 
+    border-radius:8px;
+}
+
+/*按钮停留态*/
+QPushButton:hover
+{
+background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(159, 224, 255),
+                                 stop:0.5    rgb(136, 168, 250),
+                                 stop:1   rgb(15, 93, 192));
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{
+    background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(107, 232, 207),
+                                 stop:0.5     rgb(159, 224, 255),
+                                 stop:1   rgb(211, 195, 252));
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>路径信息</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="CityCheck_pushButton">
+         <property name="styleSheet">
+          <string notr="true">/*按钮普通态*/
+QPushButton
+{
+    /*字体为微软雅黑*/
+    font-family:Microsoft Yahei;
+    /*字体大小为20点*/
+    font-size:20pt;
+    /*字体颜色为白色*/    
+    color:white;
+    /*背景颜色*/  
+     background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(9, 251, 255),
+                                 stop:0.5    rgb(154, 197, 252),
+                                 stop:1   rgb(211, 195, 252));
+/*background: qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0 #497BF0,stop:1 #1FB6F6);*/
+    /*边框圆角半径为8像素*/ 
+    border-radius:8px;
+}
+
+/*按钮停留态*/
+QPushButton:hover
+{
+background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(159, 224, 255),
+                                 stop:0.5    rgb(136, 168, 250),
+                                 stop:1   rgb(15, 93, 192));
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{
+    background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+							stop:0   rgb(107, 232, 207),
+                                 stop:0.5     rgb(159, 224, 255),
+                                 stop:1   rgb(211, 195, 252));
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>城市信息</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SystemExit_pushButton">
+         <property name="styleSheet">
+          <string notr="true">/*按钮普通态*/
+QPushButton
+{
+    /*字体为微软雅黑*/
+    font-family:Microsoft Yahei;
+    /*字体大小为20点*/
+    font-size:20pt;
+    /*字体颜色为白色*/    
+    color:white;
+    /*背景颜色*/  
+background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+                                 stop:0 rgb(1, 232, 254)
+	/* rgb(240, 149, 248),    rgb(160, 75, 227));*/
+                          
+                                 stop:1    rgb(137, 75, 200));
+    /*边框圆角半径为8像素*/ 
+    border-radius:8px;
+}
+
+/*按钮停留态*/
+QPushButton:hover
+{
+    /*背景颜色*/  
+   background:qlineargradient(x1:0 , y1:0 , x2:1 , y2:0,
+                                 stop:0   rgb(160, 75, 227),
+                           /*     stop:0.2   rgba(3, 204, 255,0.5),
+                                 stop:0.5  rgb(159, 224, 255),
+                               stop:0.8   rgba(3, 204, 255,0.5),*/
+                                 stop:1    rgb(240, 149, 248));
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    background-color:rgb(14 , 135 , 228);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>退出</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PathChoose_page">
+     <property name="minimumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="Return_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>20</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>116</x>
+        <y>110</y>
+        <width>801</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>305</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="Way_label">
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>交通工具</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="Way_comboBox">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Src_label">
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>起始城市</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="src_lineEdit">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	border: 1px solid rgb(82, 220, 254); /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 3px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                  stop:0 rgb(3, 204, 255), stop: 0.4 rgb(9, 251, 255), stop:1rgb(70, 0, 113)); /* 背景颜色 */
+	color: rgb(20, 107, 201); /* 文本颜色 */
+	selection-background-color: #A0A0A0; /* 选中文本的背景颜色 */
+	selection-color: #F2F2F2; /* 选中文本的颜色 */
+	font-family: &quot;幼圆&quot;; /* 文本字体族 */
+
+	font-size: 11pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 1px solid rgb(43, 144, 195);
+	border-radius: 3px;
+	background-color: #F2F2F2;
+        color: #298DFF;
+        selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+
+QLineEdit[echoMode=&quot;2&quot;] { /* QLineEdit有输入掩码时的状态 */
+	lineedit-password-character: 9679;
+	lineedit-password-mask-delay: 2000;
+}
+
+QLineEdit:disabled { /* QLineEdit在禁用时的状态 */
+	border: 1px solid #CDCDCD;
+	background-color: #CDCDCD;
+	color: #B4B4B4;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	background-color: #CDCDCD;
+	color: #F2F2F2;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="des_label">
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>终点城市</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="des_lineEdit">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+	border: 1px solid rgb(82, 220, 254); /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 3px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                  stop:0 rgb(3, 204, 255), stop: 0.4 rgb(9, 251, 255), stop:1rgb(70, 0, 113)); /* 背景颜色 */
+	color: rgb(20, 107, 201); /* 文本颜色 */
+	selection-background-color: #A0A0A0; /* 选中文本的背景颜色 */
+	selection-color: #F2F2F2; /* 选中文本的颜色 */
+	font-family: &quot;幼圆&quot;; /* 文本字体族 */
+
+	font-size: 11pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 1px solid rgb(43, 144, 195);
+	border-radius: 3px;
+	background-color: #F2F2F2;
+        color: #298DFF;
+        selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+
+QLineEdit[echoMode=&quot;2&quot;] { /* QLineEdit有输入掩码时的状态 */
+	lineedit-password-character: 9679;
+	lineedit-password-mask-delay: 2000;
+}
+
+QLineEdit:disabled { /* QLineEdit在禁用时的状态 */
+	border: 1px solid #CDCDCD;
+	background-color: #CDCDCD;
+	color: #B4B4B4;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	background-color: #CDCDCD;
+	color: #F2F2F2;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="PreferChoice_label">
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>选择</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="PreferChoice_comboBox">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Check_pushButton">
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>查询</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="start_label">
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>出发时间</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="month_comboBox">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="month_label">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>月</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="day_comboBox">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="day_label">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>日</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="hour_comboBox">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="month_label_3">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>时</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="min_comboBox">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="month_label_4">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+             </property>
+             <property name="text">
+              <string>分</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="PathChoose_Table">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+           <horstretch>50</horstretch>
+           <verstretch>200</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>305</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget{border:none;border:0px;background-color: rgb(255, 255, 255);}
+          QTableWidget::item{background-color: rgba(219, 255, 171, 0);color:#663E00;}
+                          QTableWidget::item:hover{background-color: rgba(219, 255, 171, 0);color:#DB5D00;}
+                          QTableWidget::item:selected{background-color: rgba(219, 255, 171, 0);color:#DB5D00;}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="PathCheckReslabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+           <horstretch>50</horstretch>
+           <verstretch>200</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+color ：rgb(78, 78, 117)；</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>450</y>
+        <width>69</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PathCheck_page">
+     <property name="minimumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="Return_pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>58</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="PathCheck_Table">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>130</y>
+        <width>790</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>790</width>
+        <height>311</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>790</width>
+        <height>311</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget{border:none;border:0px;background-color: rgb(255, 255, 255);}
+          QTableWidget::item{background-color: rgba(219, 255, 171, 0);color:#663E00;}
+                          QTableWidget::item:hover{background-color: rgba(219, 255, 171, 0);color:#0443f3;}
+                          QTableWidget::item:selected{background-color: rgba(219, 255, 171, 0);color:#ec2351;}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>100</y>
+        <width>69</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>车次信息</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>450</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="PathCheck_Add_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>8</horstretch>
+           <verstretch>20</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>添加</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PathCheck_Del_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>8</horstretch>
+           <verstretch>20</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>删除</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PathCheck_Mdy_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>8</horstretch>
+           <verstretch>15</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>修改</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>100</y>
+        <width>213</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="PlaneLineSearch_radioButton">
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+	font:75 9pt &quot;Arial&quot;;
+	background:transparent;
+	color:white;
+	border:none;
+}
+
+QRadioButton:disabled{
+	color:gray;
+}
+
+QRadioButton::indicator{
+	width:12px;
+	height:12px;
+	border-radius:8px;
+}
+
+QRadioButton::indicator:checked{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(4, 156, 232, 255), stop:0.6 rgba(4, 156, 232, 255), stop:0.65 transparent, stop:0.8 transparent, stop:0.85 rgba(4, 156, 232, 255), stop:1 rgba(4, 156, 232, 255));
+	border:1px solid rgb(4, 156, 232);
+	border-radius:8px;
+}
+
+QRadioButton::indicator:unchecked{
+	background-color:transparent;
+	border:2px solid rgba(4, 156, 232, 255);
+}
+
+QRadioButton::indicator:unchecked:disabled{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 transparent, stop:0.6 transparent, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:2px solid rgb(200, 200, 200);
+}
+
+QRadioButton::indicator:checked:disabled{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 gray, stop:0.6 gray, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:1px solid gray;
+	border-radius:8px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>飞机</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="TrainLineSearch_radioButton">
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+	font:75 9pt &quot;Arial&quot;;
+	background:transparent;
+	color:white;
+	border:none;
+}
+
+QRadioButton:disabled{
+	color:gray;
+}
+
+QRadioButton::indicator{
+	width:12px;
+	height:12px;
+	border-radius:8px;
+}
+
+QRadioButton::indicator:checked{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(4, 156, 232, 255), stop:0.6 rgba(4, 156, 232, 255), stop:0.65 transparent, stop:0.8 transparent, stop:0.85 rgba(4, 156, 232, 255), stop:1 rgba(4, 156, 232, 255));
+	border:1px solid rgb(4, 156, 232);
+	border-radius:8px;
+}
+
+QRadioButton::indicator:unchecked{
+	background-color:transparent;
+	border:2px solid rgba(4, 156, 232, 255);
+}
+
+QRadioButton::indicator:unchecked:disabled{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 transparent, stop:0.6 transparent, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:2px solid rgb(200, 200, 200);
+}
+
+QRadioButton::indicator:checked:disabled{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 gray, stop:0.6 gray, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:1px solid gray;
+	border-radius:8px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>火车</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CityCheck_page">
+     <property name="minimumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>560</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="CityCheck_label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>139</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">backgroud:rgb(85, 170, 255);
+font: 13pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="text">
+       <string>  城市信息</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Return_pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>852</x>
+        <y>50</y>
+        <width>101</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>170</y>
+        <width>511</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTableWidget" name="CityCheck_Table">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>150</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>60</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="City_Add_pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>18</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 11pt &quot;微软雅黑&quot;;</string>
+           </property>
+           <property name="text">
+            <string>添加</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>12</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>60</width>
+             <height>30</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="City_Del_pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>18</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>18</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>18</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{	
+	color:#52DCFE;
+	border:2px solid #52DCFE;
+	border-radius:5px;
+font: 11pt &quot;微软雅黑&quot;;
+}
+
+QPushButton::hover{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::pressed,QPushButton::checked{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::disabled{
+	background-color:transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>删除</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>16</width>
+             <height>12</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>60</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>130</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QRadioButton" name="CityPlane_radioButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QRadioButton{
+	font:75 12pt &quot;微软雅黑&quot;;
+	background:transparent;
+	color:white;
+	border:none;
+}
+
+QRadioButton:disabled{
+	color:gray;
+}
+
+QRadioButton::indicator{
+	width:12px;
+	height:12px;
+	border-radius:8px;
+}
+
+QRadioButton::indicator:checked{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(4, 156, 232, 255), stop:0.6 rgba(4, 156, 232, 255), stop:0.65 transparent, stop:0.8 transparent, stop:0.85 rgba(4, 156, 232, 255), stop:1 rgba(4, 156, 232, 255));
+	border:1px solid rgb(4, 156, 232);
+	border-radius:8px;
+}
+
+QRadioButton::indicator:unchecked{
+	background-color:transparent;
+	border:2px solid rgba(4, 156, 232, 255);
+}
+
+QRadioButton::indicator:unchecked:disabled{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 transparent, stop:0.6 transparent, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:2px solid rgb(200, 200, 200);
+}
+
+QRadioButton::indicator:checked:disabled{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 gray, stop:0.6 gray, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:1px solid gray;
+	border-radius:8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>飞机</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="CityTrain_radioButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QRadioButton{
+	font:75 12pt &quot;微软雅黑&quot;;
+	background:transparent;
+	color:white;
+	border:none;
+}
+
+QRadioButton:disabled{
+	color:gray;
+}
+
+QRadioButton::indicator{
+	width:12px;
+	height:12px;
+	border-radius:8px;
+}
+
+QRadioButton::indicator:checked{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(4, 156, 232, 255), stop:0.6 rgba(4, 156, 232, 255), stop:0.65 transparent, stop:0.8 transparent, stop:0.85 rgba(4, 156, 232, 255), stop:1 rgba(4, 156, 232, 255));
+	border:1px solid rgb(4, 156, 232);
+	border-radius:8px;
+}
+
+QRadioButton::indicator:unchecked{
+	background-color:transparent;
+	border:2px solid rgba(4, 156, 232, 255);
+}
+
+QRadioButton::indicator:unchecked:disabled{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 transparent, stop:0.6 transparent, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:2px solid rgb(200, 200, 200);
+}
+
+QRadioButton::indicator:checked:disabled{
+	width:14px;
+	height:14px;
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 gray, stop:0.6 gray, stop:0.65 transparent, stop:0.8 transparent, stop:0.85 gray, stop:1 gray);
+	border:1px solid gray;
+	border-radius:8px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>火车</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1052</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

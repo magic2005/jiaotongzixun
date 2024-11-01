@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cityedit</class>
+ <widget class="QWidget" name="cityedit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>363</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="trans_label">
+        <property name="styleSheet">
+         <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+        </property>
+        <property name="text">
+         <string>交通工具</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QComboBox" name="Trans_comboBox">
+        <property name="styleSheet">
+         <string notr="true">QComboBox{
+	color:#ffffff;
+	border:1px solid #52DCFE;
+	border-radius:3px;
+	background:transparent;
+}
+QComboBox:disabled{
+	border:1px solid gray;
+	color:gray;
+}
+QComboBox::drop-down{
+	background:transparent;
+}
+QComboBox::down-arrow{
+	image: url(:/new/prefix1/Imgs/add_bottom.png);
+}
+QComboBox::down-arrow:enabled{
+	color:#52DCFE;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid gray;
+	border:1px solid #52DCFE;
+	color:#ffffff;
+	background-color:#000000;
+	selection-background-color:#52DCFE;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="CityName_label">
+        <property name="styleSheet">
+         <string notr="true">backgroud:rgb(85, 170, 255);
+font: 11pt &quot;幼圆&quot;;
+color:rgb(255, 255, 255);
+border-style:outset;
+boeder-color: rgb(170, 170, 255);
+backgroud-color:rgb(85, 170, 255);
+</string>
+        </property>
+        <property name="text">
+         <string>城市名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="CityName_lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border: 1px solid rgb(82, 220, 254); /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 3px; /* 边框圆角 */
+	padding-left: 5px; /* 文本距离左边界有5px */
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                  stop:0 rgb(3, 204, 255), stop: 0.4 rgb(9, 251, 255), stop:1rgb(70, 0, 113)); /* 背景颜色 */
+	color: rgb(20, 107, 201); /* 文本颜色 */
+	selection-background-color: #A0A0A0; /* 选中文本的背景颜色 */
+	selection-color: #F2F2F2; /* 选中文本的颜色 */
+	font-family: &quot;幼圆&quot;; /* 文本字体族 */
+
+	font-size: 11pt; /* 文本字体大小 */
+}
+
+QLineEdit:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 1px solid rgb(43, 144, 195);
+	border-radius: 3px;
+	background-color: #F2F2F2;
+        color: #298DFF;
+        selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+
+QLineEdit[echoMode=&quot;2&quot;] { /* QLineEdit有输入掩码时的状态 */
+	lineedit-password-character: 9679;
+	lineedit-password-mask-delay: 2000;
+}
+
+QLineEdit:disabled { /* QLineEdit在禁用时的状态 */
+	border: 1px solid #CDCDCD;
+	background-color: #CDCDCD;
+	color: #B4B4B4;
+}
+
+QLineEdit:read-only { /* QLineEdit在只读时的状态 */
+	background-color: #CDCDCD;
+	color: #F2F2F2;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="cityedit_confirm_pushbutton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	color:#52DCFE;
+	border:2px solid #52DCFE;
+	border-radius:5px;
+font: 11pt &quot;微软雅黑&quot;;
+}
+
+QPushButton::hover{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::pressed,QPushButton::checked{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::disabled{
+	background-color:transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cityedit_exit_pushbutton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	color:#52DCFE;
+	border:2px solid #52DCFE;
+	border-radius:5px;
+font: 11pt &quot;微软雅黑&quot;;
+}
+
+QPushButton::hover{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::pressed,QPushButton::checked{
+	background-color:#52DCFE;
+	color:#ffffff;
+}
+
+QPushButton::disabled{
+	background-color:transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>481</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame
+{border-image:url(:/bk.jpg)}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
